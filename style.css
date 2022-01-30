@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+
+:root{
+    --fonte: 'Red Hat Display', sans-serif;
+    
+    --cor-azul_palido: #e0e8ff;
+    --cor-azul_claro: #3829e0;
+
+    --cor-azul_claro2: #f5f7ff;
+    --cor-azul_dessaturado: #7280a7;
+    --cor-azul_escuro: #1f2f56;
+}
+
+/* Configurações gerais */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(imagens/pattern-background-desktop.svg);
+    background-color: var(--cor-azul_palido);
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    font-family: var(--fonte);
+}
+
+
+/*****************************************/
+
+.container{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 50px auto;
+    box-shadow: 1px 15px 25px #7280a788;
+}
+
+.imagem{
+    display: contents;
+}
+.imagem img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card{
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 35px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card p{
+    color: var(--cor-azul_dessaturado);
+}
+
+/**************************/
+/* SESSÃO CARD-DESCRIÇÃO */
+
+.card-descricao h1{
+    font-weight: 900;
+    color: var(--cor-azul_escuro);
+    margin-bottom: 20px;
+}
+
+/*****************/
+/* SESSÃO PLANO */
+
+.plano{
+    background-color: var(--cor-azul_claro2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0px
+}
+
+.card-plano{
+    display: flex;
+    align-items: center;    
+}
+
+.plano-descricao{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.plano-descricao h2{
+    font-size: 15px;
+    color: var(--cor-azul_escuro);
+}
+
+.plano a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--cor-azul_claro);
+}
+
+.plano a:hover{
+    color: var(--cor-azul_dessaturado);
+}
+
+/**********************/
+/* SESSÃO CARD-BOTÃO */
+
+.card-botoes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.botao-pagamento{
+    text-decoration: none;
+    background-color: var(--cor-azul_claro);
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 0px;
+    margin-bottom: 30px;
+    box-shadow: 1px 15px 15px var(--cor-azul_palido);
+}
+
+.botao-pagamento:hover{
+    background-color: var(--cor-azul_dessaturado);
+}
+
+.botao-cancelar{
+    text-decoration: none;
+    color: var(--cor-azul_dessaturado);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.botao-cancelar:hover{
+    color: var(--cor-azul_escuro);
+}
+
+/*************/
+/** footer **/
+
+footer{
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 400px){
+    .plano{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .plano a{
+        margin-top: 20px;
+    }
+}
