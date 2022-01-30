@@ -31,8 +31,9 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- URL da solução: []()
-- URL do site ao vivo: []()
+- URL da solução: [https://www.frontendmentor.io/solutions/order-summary-responsivo-utilizando-html-e-css-_LLGP3BAB](https://www.frontendmentor.io/solutions/order-summary-responsivo-utilizando-html-e-css-_LLGP3BAB)
+
+- URL do site ao vivo: [https://daviallevato.github.io/FM-Order-summary-component/](https://daviallevato.github.io/FM-Order-summary-component/)
 
 ## Meu processo
 
